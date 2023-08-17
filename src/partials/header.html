@@ -1,18 +1,64 @@
 <header class="header fixed-block">
   <div class="header__container">
-    <a class="header__logo" href="#">Logo</a>
-    <nav class="nav" title="" data-menu>
-      <ul class="nav__list">
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>Пункт 1</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>Пункт 2</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>Пункт 3</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>Пункт 4</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>Пункт 5</a></li>
-        <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>Пункт 6</a></li>
-      </ul>
-    </nav>
-    <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
-      <span class="burger__line"></span>
-    </button>
+    <div class="header-top">
+      <img class="header-top__logo" src="../img/logo.svg" alt="Логотип Пионер">
+      <div class="header-top__contacts">
+        <div class="header-top__contact">
+          <span class="header-top__caption">По вопросам и предложениям</span>
+          <a class="header-top__link header-top__link--border" href="mailto:pionerrr@sila.ru">pionerrr@sila.ru</a>
+        </div>
+        <div class="header-top__contact">
+          <span class="header-top__caption">Для консультаций</span>
+          <a class="header-top__link" href="tel:+74954562421">+7 (495) 456-24-21</a>
+        </div>
+      </div>
+    </div>
+    <div class="header-bottom">
+      <nav class="nav" title="Меню" data-menu>
+        <ul class="nav__list">
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              Главная
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              О предприятии
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              Новости
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              Продукция
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              Услуги
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              Поддержка
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              География поставок
+            </a>
+          </li>
+          <li class="nav__item" data-menu-item><a href="#" class="nav__link" data-scroll>
+              Контакты
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="nav__btn" type="button">
+        <svg>
+          <use xlink:href='img/sprite.svg#phone-icon'>
+        </svg>
+        Перезвоните мне
+      </button>
+      <button class="burger" aria-label="Открыть меню" aria-expanded="false" data-burger>
+        <span class="burger__line"></span>
+      </button>
+    </div>
   </div>
 </header>

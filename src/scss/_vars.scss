@@ -1,8 +1,9 @@
 :root {
   // Базовые настройки сайта
-  --font-family: "Source Sans 3", sans-serif; // Шрифт по умолчанию
+  --font-family: "SourceSans3", sans-serif; // Шрифт по умолчанию
   --font-size: 1rem; // Размер шрифта по умолчанию
   --main-color: rgb(51 51 51); // Цвет текста по умолчанию
+  --gap: 1.25rem; // Отступ между блоками по умолчанию
 
   // Общие цвета для сайта
   --light-color: rgb(255 255 255);
@@ -12,7 +13,7 @@
   --light-grey-color: rgb(245 245 245);
 
   // Цвета при наведении (hover)
-  --hover-link-color: rgb(255 0 0);
+  --hover-link-color: rgb(96 124 230);
 
   // Цвета активного элемента (active)
   --active-link-color: rgb(21 255 0);

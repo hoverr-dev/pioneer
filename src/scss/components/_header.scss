@@ -1,15 +1,70 @@
 .header {
-  border-bottom: 0.0625rem solid var(--main-color);
-  padding: 1.25rem 0;
-
   &__container {
-    @include flex-all-sb;
   }
+}
+
+.header-top {
+  @include flex-all-sb;
+
+  border-bottom: 1px solid var(--grey-color);
+  padding: 2rem 0 1.95rem;
+
+  &__logo {
+  }
+
+  &__contacts {
+    @include flex;
+
+    gap: 0 var(--gap);
+  }
+
+  &__contact {
+    @include flex;
+
+    flex-direction: column;
+    align-items: flex-end;
+    min-width: 180px;
+  }
+
+  &__caption {
+    font-size: 0.875rem;
+    line-height: 1.05rem;
+  }
+
+  &__link {
+    font-weight: 600;
+    font-size: 1.25rem;
+    line-height: normal;
+    text-align: right;
+    color: var(--purple-color);
+
+    &--border {
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 0.3125rem;
+        width: 100%;
+        height: 0.0625rem;
+        background-color: currentcolor;
+      }
+    }
+  }
+}
+
+.header-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0 0;
 }
 
 .nav {
   &__list {
     @include flex-v-center;
+
+    gap: 0 2.7813rem;
 
     @media (max-width: $tablet) {
       flex-direction: column;
@@ -17,12 +72,6 @@
   }
 
   &__item {
-    width: 100%;
-
-    &:not(:last-child) {
-      margin: 0 1.875rem 0 0;
-    }
-
     @media (max-width: $tablet) {
       &:not(:last-child) {
         margin: 0;
@@ -50,8 +99,23 @@
     }
   }
 
+  &__btn {
+    display: flex;
+    align-items: center;
+    line-height: 1.2rem;
+    text-transform: uppercase;
+    color: var(--purple-color);
+    gap: 0 0.25rem;
+
+    svg {
+      width: 1rem;
+      height: 1rem;
+      fill: var(--purple-color);
+    }
+  }
+
   @media (max-width: $tablet) {
-    --header-height: 57px;
+    --header-height: 3.5625rem;
 
     position: fixed;
     right: -100%;
