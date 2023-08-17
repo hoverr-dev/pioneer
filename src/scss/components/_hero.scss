@@ -1,0 +1,29 @@
+.hero {
+  &__container {
+  }
+
+  &__img {
+  }
+}
+
+.hero-top {
+  @include flex;
+
+  gap: 0 20px;
+
+  &__title {
+    flex: 0 1 36.25rem;
+    font-size: 3.75rem;
+  }
+
+  &__text {
+    flex: 0 1 23.75rem;
+    margin: 1.5rem 0 0;
+  }
+}
+
+.title {
+}
+
+.text {
+}
