@@ -1,0 +1,26 @@
+.about {
+  margin: 0 0 5rem;
+}
+
+.about-content {
+  &__box {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    margin: 0 0 2rem;
+    gap: 1.5rem var(--gap);
+  }
+
+  &__text {
+    grid-column: 6 span;
+  }
+
+  &__images {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 0 var(--gap);
+
+    img {
+      grid-column: 6 span;
+    }
+  }
+}
