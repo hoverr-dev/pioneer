@@ -5,7 +5,7 @@
 .hero-top {
   @include flex;
 
-  gap: 0 20px;
+  gap: 0 var(--gap);
 
   &__title {
     flex: 0 1 36.25rem;
