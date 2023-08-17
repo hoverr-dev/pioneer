@@ -1,0 +1,14 @@
+@use "sass:math";
+
+// подключение настроек сайта
+@import "vars";
+@import "fonts";
+@import "mixins";
+@import "settings";
+@import "reset";
+
+// подключения компонентов страницы
+@import "./components/header";
+@import "./components/footer";
+
+// подключения страниц

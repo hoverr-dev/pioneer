@@ -1,0 +1,48 @@
+.modal {
+  position: fixed;
+  display: none;
+  overflow-y: auto;
+  padding: 1.875rem;
+  background-color: rgba(0 0 0 / 50%);
+  cursor: pointer;
+  inset: 0;
+
+  &__main {
+    position: relative;
+    margin: auto;
+    border-radius: 1rem;
+    padding: 1.875rem;
+    max-width: 37.5rem;
+    color: #333;
+    background-color: #fff;
+    cursor: default;
+  }
+
+  &__title {
+    margin: 0 0 0.625rem;
+    font-weight: 700;
+  }
+
+  // &__body {
+  // }
+
+  &__close {
+    position: absolute;
+    right: 0.625rem;
+    top: 0.625rem;
+    display: block;
+    outline: 0.0625rem solid transparent;
+    outline-offset: 0.1875rem;
+    border-radius: 0.1875rem;
+    padding: 0;
+    width: 1.875rem;
+    height: 1.875rem;
+    font-size: 1.375rem;
+    text-align: center;
+    transition: outline-color 0.15s ease-in-out;
+
+    &:focus-visible {
+      outline-color: #000;
+    }
+  }
+}

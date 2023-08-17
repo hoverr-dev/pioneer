@@ -1,0 +1,86 @@
+.select {
+  display: flex;
+  flex-direction: column;
+  width: 25rem;
+
+  &__box {
+    order: 1;
+    overflow: hidden;
+    border-radius: 0 0 0.5rem 0.5rem;
+    width: 100%;
+    max-height: 0;
+    color: #f5f6fa;
+    background-color: #2f3640;
+    opacity: 0;
+    transition: all 0.4s;
+
+    &::-webkit-scrollbar {
+      border-radius: 0 0 0.5rem;
+      width: 0.5rem;
+      background-color: #0d141f;
+    }
+
+    &::-webkit-scrollbar-thumb {
+      border-radius: 0 0 0.5rem;
+      background-color: #525861;
+    }
+
+    &.select-active {
+      overflow-y: scroll;
+      border-top: 0.0625rem solid #0d141f;
+      max-height: 15rem;
+      opacity: 1;
+
+      ~ .select__search .select__search-input {
+        opacity: 1;
+        pointer-events: auto;
+      }
+    }
+
+    &.select-active + .select__selected::after {
+      top: -0.375rem;
+      transform: rotateX(180deg);
+    }
+  }
+
+  &__selected {
+    position: relative;
+    order: 0;
+    border-radius: 0.5rem 0.5rem 0 0;
+    color: #f5f6fa;
+    background-color: #2f3640;
+
+    &::after {
+      content: "";
+      position: absolute;
+      right: 0.625rem;
+      top: 0.3125rem;
+      width: 2rem;
+      height: 100%;
+      background: url("../img/select-arrow.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      transition: all 0.4s;
+    }
+  }
+
+  &__option {
+    .select__input {
+      display: none;
+    }
+
+    &:hover {
+      background-color: #414b57;
+    }
+  }
+
+  &__label {
+    cursor: pointer;
+  }
+
+  &__option,
+  &__selected {
+    padding: 0.75rem 1.5rem;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,31 @@
+:root {
+  // Базовые настройки сайта
+  --font-family: "Source Sans 3", sans-serif; // Шрифт по умолчанию
+  --font-size: 1rem; // Размер шрифта по умолчанию
+  --main-color: rgb(51 51 51); // Цвет текста по умолчанию
+
+  // Общие цвета для сайта
+  --light-color: rgb(255 255 255);
+  --purple-color: rgb(96 124 230);
+  --third-color: rgb(217 217 217);
+  --grey-color: rgb(136 136 136);
+  --light-grey-color: rgb(245 245 245);
+
+  // Цвета при наведении (hover)
+  --hover-link-color: rgb(255 0 0);
+
+  // Цвета активного элемента (active)
+  --active-link-color: rgb(21 255 0);
+}
+
+// Общие БЭМ-блоки
+.title {
+  margin: 0 0 2rem;
+  font-weight: 700;
+  font-size: 3rem;
+  line-height: 1.2rem;
+}
+
+.text {
+  line-height: 1.4rem;
+}

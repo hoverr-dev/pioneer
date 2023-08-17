@@ -1,0 +1,55 @@
+/* stylelint-disable */
+@mixin custom-checkbox {
+  position: relative;
+  cursor: pointer;
+
+  &__input {
+    position: absolute;
+    opacity: 0;
+
+    &:checked {
+      + .checkbox__text::before {
+        background: url("../img/check.svg") center no-repeat;
+        background-size: 0.75rem;
+      }
+    }
+  }
+
+  &__text {
+    display: flex;
+    align-items: center;
+    font-weight: 300;
+    font-size: 0.75rem;
+    line-height: 0.875rem;
+    color: var(--main-color);
+
+    &::before,
+    &::after {
+      content: "";
+    }
+
+    &::before {
+      margin-right: 0.625rem;
+      border: 0.0625rem solid #777;
+      width: 0.875rem;
+      height: 0.875rem;
+      box-sizing: border-box;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+
+    &::after {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      outline: 0.125rem solid #333;
+      opacity: 0;
+    }
+  }
+}
+
+.checkbox {
+  @include custom-checkbox;
+}
