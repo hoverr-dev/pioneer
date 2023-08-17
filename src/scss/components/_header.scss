@@ -1,16 +1,8 @@
-.header {
-  &__container {
-  }
-}
-
 .header-top {
   @include flex-all-sb;
 
   border-bottom: 1px solid var(--grey-color);
   padding: 2rem 0 1.95rem;
-
-  &__logo {
-  }
 
   &__contacts {
     @include flex;
