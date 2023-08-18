@@ -61,11 +61,14 @@ getHeaderHeight();
 // });
 
 // Подключение свайпера
-// import Swiper, { Navigation, Pagination } from 'swiper';
-// Swiper.use([Navigation, Pagination]);
-// const swiper = new Swiper(el, {
-//   slidesPerView: 'auto',
-// });
+import Swiper, { Navigation, Pagination } from "swiper";
+Swiper.use([Navigation, Pagination]);
+const swiper = new Swiper(".news-content", {
+  slidesPerView: 3,
+  slidesPerGroup: 3,
+  spaceBetween: 20,
+  speed: 500,
+});
 
 // Подключение анимаций по скроллу
 // import AOS from 'aos';
