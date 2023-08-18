@@ -33,7 +33,7 @@
 
 .footer-nav {
   display: flex;
-  flex: 1 0 343px;
+  flex: 1 0 21.4375rem;
   flex-wrap: wrap;
   justify-content: space-between;
   margin: 0 0 4.5625rem;
@@ -45,7 +45,7 @@
 
   &__item {
     &:not(:last-child) {
-      margin: 0 0 24px;
+      margin: 0 0 1.5rem;
     }
   }
 
