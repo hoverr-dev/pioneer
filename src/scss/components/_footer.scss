@@ -1,0 +1,56 @@
+.footer {
+  padding: 3.5rem 0 1.5rem;
+  background-color: var(--main-color);
+
+  &__container {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+  }
+
+  &__item {
+    grid-column: 6 span;
+
+    &--flex {
+      display: flex;
+      margin: 0 0 0 0.625rem;
+      gap: 0 3.5625rem;
+    }
+
+    &--full {
+      grid-column: 12 span;
+    }
+  }
+
+  &__copy {
+    display: block;
+    width: 100.6%;
+    font-size: 0.875rem;
+    line-height: normal;
+    text-align: center;
+    color: var(--light-color);
+  }
+}
+
+.footer-nav {
+  display: flex;
+  flex: 1 0 343px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0 0 4.5625rem;
+  max-width: 21.4375rem;
+
+  &__list {
+    gap: 2.75rem;
+  }
+
+  &__item {
+    &:not(:last-child) {
+      margin: 0 0 24px;
+    }
+  }
+
+  &__link {
+    line-height: 1.2rem;
+    color: var(--light-color);
+  }
+}
