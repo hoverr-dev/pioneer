@@ -9,6 +9,14 @@
 
   &__item {
     grid-column: 4 span;
+
+    @media (max-width: $mobile) {
+      grid-column: 6 span;
+    }
+
+    @media (max-width: $mobileSmall) {
+      grid-column: 12 span;
+    }
   }
 }
 
