@@ -64,10 +64,20 @@ getHeaderHeight();
 import Swiper, { Navigation, Pagination } from "swiper";
 Swiper.use([Navigation, Pagination]);
 const swiper = new Swiper(".news-content", {
-  slidesPerView: 3,
-  slidesPerGroup: 3,
+  slidesPerView: 1,
+  slidesPerGroup: 1,
   spaceBetween: 20,
   speed: 500,
+  breakpoints: {
+    768: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+    },
+    992: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+    },
+  },
 });
 
 // Подключение анимаций по скроллу
