@@ -30,12 +30,11 @@
 
     @media (max-width: $tablet) {
       flex: none;
-      margin: 0;
-    }
-
-    @media (max-width: $mobileSmall) {
       margin: 0 0 1rem;
     }
+
+    // @media (max-width: $mobile) {
+    // }
   }
 
   @media (max-width: $tablet) {
